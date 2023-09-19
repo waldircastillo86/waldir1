@@ -27,6 +27,7 @@ Partial Class Form1
         Button1 = New Button()
         RadioButton1 = New RadioButton()
         Button2 = New Button()
+        ComboBox1 = New ComboBox()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -72,11 +73,20 @@ Partial Class Form1
         Button2.Text = "Button2"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(303, 242)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(121, 23)
+        ComboBox1.TabIndex = 5
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(ComboBox1)
         Controls.Add(Button2)
         Controls.Add(RadioButton1)
         Controls.Add(Button1)
@@ -93,4 +103,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
