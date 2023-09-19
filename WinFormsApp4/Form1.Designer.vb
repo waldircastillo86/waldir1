@@ -28,6 +28,7 @@ Partial Class Form1
         RadioButton1 = New RadioButton()
         Button2 = New Button()
         ComboBox1 = New ComboBox()
+        CheckBox1 = New CheckBox()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -81,11 +82,22 @@ Partial Class Form1
         ComboBox1.Size = New Size(121, 23)
         ComboBox1.TabIndex = 5
         ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(554, 252)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(85, 19)
+        CheckBox1.TabIndex = 6
+        CheckBox1.Text = "CheckBox1"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(CheckBox1)
         Controls.Add(ComboBox1)
         Controls.Add(Button2)
         Controls.Add(RadioButton1)
@@ -104,4 +116,5 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
