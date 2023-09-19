@@ -29,6 +29,7 @@ Partial Class Form1
         Button2 = New Button()
         ComboBox1 = New ComboBox()
         CheckBox1 = New CheckBox()
+        DateTimePicker1 = New DateTimePicker()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -92,11 +93,19 @@ Partial Class Form1
         CheckBox1.Text = "CheckBox1"
         CheckBox1.UseVisualStyleBackColor = True
         ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Location = New Point(537, 116)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.TabIndex = 7
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(DateTimePicker1)
         Controls.Add(CheckBox1)
         Controls.Add(ComboBox1)
         Controls.Add(Button2)
@@ -117,4 +126,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
