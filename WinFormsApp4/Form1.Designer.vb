@@ -26,6 +26,7 @@ Partial Class Form1
         TextBox2 = New TextBox()
         Button1 = New Button()
         RadioButton1 = New RadioButton()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -62,11 +63,21 @@ Partial Class Form1
         RadioButton1.Text = "RadioButton1"
         RadioButton1.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(149, 178)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 4
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(RadioButton1)
         Controls.Add(Button1)
         Controls.Add(TextBox2)
@@ -81,4 +92,5 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents Button2 As Button
 End Class
